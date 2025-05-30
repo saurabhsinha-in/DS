@@ -3,7 +3,7 @@ package quiz.puzzle.array;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class MoveAllZeroesEndTest {
+public class MoveAllZeroesEndTest {
 
     @Test
     void testExample1() {
