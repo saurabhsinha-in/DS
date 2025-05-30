@@ -1,6 +1,7 @@
 package quiz.puzzle.array;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -27,12 +28,11 @@ public class ArrayLeaders {
 
     public static Integer[] getLeader(Integer[] arr){
         List<Integer> list = new ArrayList<>();
-        int temp = 0;
         for(int i=0;i<arr.length;i++){
         boolean isLeader  = true;
-            temp = arr[i];
+            int temp = arr[i];
             for(int j = i+1; j<arr.length;j++){
-                if(temp <= arr[j]){
+                if(temp < arr[j]){
                     isLeader = false;
                     break;
                 }
@@ -44,6 +44,25 @@ public class ArrayLeaders {
         }
         return  list.toArray(new Integer[0]);
 
+    }
+
+
+    /**
+     Below is the optimized solution
+     From the reverse we go ahead
+     */
+    public static Integer[] getLeader1(Integer[] arr){
+        int leader = Integer.MIN_VALUE;
+        List<Integer> list = new ArrayList<>();
+        for(int i=arr.length -1 ; i >= 0 ;i--){
+            if(arr[i] >= leader){
+                leader = arr[i];
+                list.add(leader);
+            }
+        }
+
+        Collections.reverse(list);
+        return list.toArray(new Integer[0]);
     }
 
 
