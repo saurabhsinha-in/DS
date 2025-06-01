@@ -1,8 +1,9 @@
-package quiz.puzzle.array;
+package quiz.puzzle.array.easy;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
 public class ArrayDuplicatesTest {

@@ -1,9 +1,9 @@
-package quiz.puzzle.array;
+package quiz.puzzle.array.basic;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static quiz.puzzle.array.MinAndMaxArray.findMinMax;
+import static quiz.puzzle.array.basic.MinAndMaxArray.findMinMax;
 
 class MinAndMaxArrayTest {
 

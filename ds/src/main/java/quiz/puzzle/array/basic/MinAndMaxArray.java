@@ -15,12 +15,8 @@ Input: arr[] = [56789]
 Output: 56789 56789
 Explanation: Since the array contains only one element so both min & max are same.
  */
-package quiz.puzzle.array;
-
-import lombok.Getter;
-
+package quiz.puzzle.array.basic;
 public class MinAndMaxArray {
-
     public static Pair<Integer, Integer> findMinMax(int[] arr) {
         int min = arr[0];
         int max = arr[0];
@@ -35,15 +31,5 @@ public class MinAndMaxArray {
         }
         return new Pair<>(min,max);
 
-    }
-}
-
-@Getter
-class Pair<F, S> {
-    private final F first;
-    private final S second;
-    public Pair(F first, S second) {
-        this.first = first;
-        this.second = second;
     }
 }
