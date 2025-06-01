@@ -10,8 +10,17 @@ Input: arr[] = [9, 8, 7, 6, 4, 2, 1, 3]
 Output: [3, 9, 8, 7, 6, 4, 2, 1]
 Explanation: After rotating clock-wise 3 comes in first position.
  */
-package quiz.puzzle.array.basic;
 
+/*
+  Solution (Step-by-step explanation):
+  1. Store the last element of the array in a temporary variable.
+  2. Starting from the end of the array, shift each element one position to the right.
+     - For each index from n-1 down to 1, set arr[i] = arr[i-1].
+  3. Place the temporarily stored last element at the first position of the array (arr[0]).
+
+  This effectively rotates the array by one position in the clockwise direction.
+ */
+package quiz.puzzle.array.basic;
 public class RotateArrayBy1 {
     public void rotate(int[] arr) {
         int n = arr.length -1;
