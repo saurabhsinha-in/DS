@@ -16,11 +16,13 @@
 
 package quiz.puzzle.array.easy;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class MoveAllNegElementsToEnd {
     public void segregateElements(int[] arr) {
+
+
         List<Integer> pos = new ArrayList<>();
         List<Integer> neg = new ArrayList<>();
         for(int i : arr){
@@ -44,4 +46,22 @@ public class MoveAllNegElementsToEnd {
         }
 
     }
+
+
+
+    public List<Integer> listDups(List<Integer> list) {
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (Integer i : list) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
+
+
+        }
+
+        return map.keySet().stream().filter(k -> k == 2).map(k -> map.get(k)).collect(Collectors.toList());
+    }
+
+
+
+
 }
