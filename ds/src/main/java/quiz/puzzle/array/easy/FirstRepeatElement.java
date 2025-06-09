@@ -28,10 +28,6 @@ public class FirstRepeatElement {
                 indexMap.put(arr[i],i);
             }
         }
-
-
-
-
         return index == Integer.MAX_VALUE ? -1 : index + 1;
     }
 }
