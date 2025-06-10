@@ -31,5 +31,3 @@ public class FirstRepeatElement {
         return index == Integer.MAX_VALUE ? -1 : index + 1;
     }
 }
-
-
