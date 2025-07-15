@@ -17,7 +17,7 @@
  */
 
 
-package quiz.puzzle.array;
+package quiz.puzzle.array.easy;
 
 import java.util.*;
 import java.util.stream.Collectors;
